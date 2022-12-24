@@ -23,7 +23,7 @@
 
 .light-mode {
   --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-secondary: #FEE715FF;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -31,7 +31,7 @@
   --color-grey-2: #6c7983;
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
-  --color-grey-5: #f8f8f8;
+  --color-grey-5: #E5DCC3;
   --color-grey-6: #12181b;
 }
 
@@ -207,8 +207,8 @@ section {
 
 /*About*/
 .about-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 }
@@ -216,6 +216,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+  margin-top: 10%;
 }
 .about-container .right-about .about-item {
   border: 1px solid var(--color-grey-5);
@@ -230,10 +231,19 @@ section {
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
 }
 .about-container .right-about .about-item .abt-text {
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
+
   display: flex;
   flex-direction: column;
+  
 }
+
+
+/* .about-container .right-about .about-item .abt-text img{
+  width: 100%;
+  height: 40vh;
+} */
+
 .about-container .right-about .about-item .abt-text .large-text {
   font-size: 3rem;
   font-weight: 700;
@@ -241,7 +251,7 @@ section {
 }
 .about-container .right-about .about-item .abt-text .small-text {
   padding-left: 3rem;
-  position: relative;
+  /* position: relative; */
   text-transform: uppercase;
   font-size: 1.2rem;
   color: var(--color-grey-1);
@@ -326,7 +336,40 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 70%;
 }
+.about-stats .skils{
+  display: flex;
+}
+.abouts{
+    display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 2rem;
+  margin-top: 10%;
+}
 
+.about-stats .skills i{
+  color: blue;
+  margin-left: 29%;
+  margin-top: 10%;
+  font-size: 200px;
+  height: 40vh;
+}
+.about-stats .skills img{
+  width: 100%;
+  height: 40vh;
+}
+.about-stats .skills .skill-item{
+  padding: 20px;
+  border: 1px solid var(--color-grey-5);
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.about-stats .skills .skill-item:hover{
+  cursor: default;
+  transform: translateY(-5px);
+  border: 1px solid var(--color-secondary);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -344,6 +387,7 @@ section {
   background-color: var(--color-grey-5);
   transform: translateX(-50%);
 }
+
 
 /*Timeline*/
 .timeline {
