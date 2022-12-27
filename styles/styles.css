@@ -844,6 +844,12 @@ section {
     font-size: 1rem;
 
   }
+  .abouts{
+    display: grid;
+   grid-template-columns: auto;
+  grid-gap: 2rem;
+  margin-top: 5%;
+}
 
 }
 
